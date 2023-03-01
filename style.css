@@ -1,0 +1,18 @@
+.h-max {
+  height: 100vh !important;
+}
+.w-auto {
+  width: auto !important;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-dark);
+}
+
+.w-input {
+  width: 90px;
+  font-size: 1rem;
+  background: #2d3237;
+  border: none;
+  color: #adb5bd;
+}
