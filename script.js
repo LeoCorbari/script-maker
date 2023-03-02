@@ -26,6 +26,16 @@ $("main")
 
     text = $(this).closest("div")[0].outerText;
 
+    if ($(this).closest("div")[0].outerText.includes("sippstnuser")) {
+      var values = JSON.parse(sessionStorage.getItem("values"));
+
+      console.log(values);
+
+      text = `sippstnuser add ${values[4]} ${values[1]} 1 mgid 1 username ${$(
+        "#username"
+      ).val()} telno ${$("#telno").val()} password ${$("#password").val()}`;
+    }
+
     navigator.clipboard.writeText(text).then(
       function () {
         $(".toast").toast("show");
