@@ -13,6 +13,7 @@ $(window).on("load", function () {
   $(".var-f").append(values[2]);
   $(".var-s").append(values[3]);
   $(".var-p").append(values[4]);
+  $(".var-vlanTel").append(values[5]);
 });
 
 $("#username").keyup(function () {
